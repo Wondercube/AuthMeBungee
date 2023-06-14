@@ -25,8 +25,11 @@ public class AuthMeBungee extends Plugin {
     private Injector injector;
     private SettingsManager settings;
     private AuthPlayerManager authPlayerManager;
+    
+    private static AuthMeBungee authMeBungee;
 
     public AuthMeBungee() {
+    	AuthMeBungee.authMeBungee = this;
     }
 
     @Override
@@ -70,6 +73,10 @@ public class AuthMeBungee extends Plugin {
         injector.register(TaskScheduler.class, getProxy().getScheduler());
         injector.provide(DataFolder.class, getDataFolder());
         injector.registerProvider(SettingsManager.class, BungeeSettingsProvider.class);
+    }
+    
+    public static boolean isPlayerAuthentificated(ProxiedPlayer p) {
+    	return authMeBungee.authPlayerManager.getAuthPlayer(p).isLogged();
     }
 
 }
