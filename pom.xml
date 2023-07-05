@@ -13,38 +13,6 @@
     <inceptionYear>2017</inceptionYear>
     <url>https://www.spigotmc.org/resources/authmebungee.50219/</url>
 
-    <organization>
-        <name>AuthMe-Team</name>
-        <url>https://github.com/AuthMe</url>
-    </organization>
-
-    <scm>
-        <connection>scm:git:https://github.com/AuthMe/AuthMeBungee.git</connection>
-        <developerConnection>scm:git:git@github.com:AuthMe/AuthMeBungee.git</developerConnection>
-        <url>https://github.com/AuthMe/AuthMeBungee.git</url>
-    </scm>
-
-    <ciManagement>
-        <system>jenkins</system>
-        <url>http://ci.codemc.org/job/AuthMeBungee/</url>
-    </ciManagement>
-
-    <issueManagement>
-        <system>GitHub</system>
-        <url>https://github.com/AuthMe/AuthMeBungee/issues</url>
-    </issueManagement>
-
-    <distributionManagement>
-        <snapshotRepository>
-            <id>codemc-snapshots</id>
-            <url>https://repo.codemc.org/repository/maven-snapshots/</url>
-        </snapshotRepository>
-        <repository>
-            <id>codemc-releases</id>
-            <url>https://repo.codemc.org/repository/maven-releases/</url>
-        </repository>
-    </distributionManagement>
-
     <licenses>
         <license>
             <name>The GNU General Public Licence version 3 (GPLv3)</name>
